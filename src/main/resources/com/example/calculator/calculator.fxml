@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="com.example.calculator.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="917.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="36.0" layoutY="693.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="1" fx:id="one" onAction="#btnClicked"/>
+      <Button layoutX="154.0" layoutY="693.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="2" onAction="#btnClicked"/>
+      <Button layoutX="36.0" layoutY="471.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="7" onAction="#btnClicked"/>
+      <Button layoutX="154.0" layoutY="471.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="8" onAction="#btnClicked"/>
+      <Button layoutX="275.0" layoutY="471.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="9" onAction="#btnClicked"/>
+      <Button layoutX="391.0" layoutY="471.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="*" onAction="#arithmeticOperation"/>
+      <Button layoutX="36.0" layoutY="582.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="4" onAction="#btnClicked"/>
+      <Button layoutX="154.0" layoutY="582.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="5" onAction="#btnClicked"/>
+      <Button layoutX="275.0" layoutY="582.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="6" onAction="#btnClicked"/>
+      <Button layoutX="391.0" layoutY="582.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="-" onAction="#arithmeticOperation"/>
+      <Button layoutX="275.0" layoutY="693.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="3" onAction="#btnClicked"/>
+      <Button layoutX="391.0" layoutY="693.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="+" onAction="#arithmeticOperation"/>
+      <Button layoutX="36.0" layoutY="805.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="+/-" onAction="#btnClicked"/>
+      <Button layoutX="154.0" layoutY="805.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="0" onAction="#btnClicked"/>
+      <Button layoutX="275.0" layoutY="805.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="." onAction="#dotClicked"/>
+      <Button layoutX="391.0" layoutY="805.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="=" onAction="#equals"/>
+      <Button layoutX="35.0" layoutY="371.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="1/x" onAction="#btnClicked"/>
+      <Button layoutX="153.0" layoutY="371.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="x^2" onAction="#btnClicked"/>
+      <Button layoutX="274.0" layoutY="371.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="\\2" onAction="#btnClicked"/>
+      <Button layoutX="390.0" layoutY="371.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="/" onAction="#arithmeticOperation"/>
+      <Button layoutX="35.0" layoutY="273.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="\%" onAction="#btnClicked"/>
+      <Button layoutX="153.0" layoutY="273.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="CE" onAction="#btnClicked"/>
+      <Button layoutX="274.0" layoutY="273.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="C" onAction="#reset"/>
+      <Button layoutX="390.0" layoutY="273.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="79.0" text="Backspace" onAction="#backspace"/>
+
+      <TextField alignment="CENTER_RIGHT" layoutX="45.0" layoutY="57.0" prefHeight="177.0" prefWidth="424.0" fx:id="textField">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
